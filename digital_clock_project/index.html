@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <title>Your Local Time</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: #fff;
+        }
+        .center {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 20px;
+        }
+        #clock, #ukclock, #usclock, #jpclock {
+            font-size: 40px;
+            background-color: orange;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        .clock-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .label {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a target="_blank" href="https://www.youtube.com/@chaiaurcode"
+        >Youtube channel</a
+      >
+    </nav>
+    <div class="center">
+        <div class="clock-box">
+          <div class="label">India</div>
+          <div id="clock"></div>
+        </div>
+      
+        <div class="clock-box">
+          <div class="label">London</div>
+          <div id="ukclock"></div>
+        </div>
+      
+        <div class="clock-box">
+          <div class="label">New York</div>
+          <div id="usclock"></div>
+        </div>
+
+        <div class="clock-box">
+            <div class="label">Japan</div>
+            <div id="jpclock"></div>
+        </div>
+      </div>      
+    <script src="script.js"></script>
+  </body>
+</html>
